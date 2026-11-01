@@ -1,1 +1,105 @@
-Hello World!!!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strut Eye</title>
+    <meta name="description" content="Pro-level tools for amateur tennis players" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .bg-video {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 0;
+        }
+
+        .banner {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            padding: 4.5rem 1.5rem 2rem;
+            background: linear-gradient(to top,
+                    rgba(0, 0, 0, 1) 0%,
+                    rgba(0, 0, 0, 0.75) 50%,
+                    transparent 100%);
+            text-align: center;
+        }
+
+        .banner .status {
+            font-family: "Instrument Serif", Georgia, serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: clamp(1.5rem, 3.6vw, 2.1rem);
+            letter-spacing: 0.06em;
+            color: #f5f7f2;
+            animation: rise 0.8s ease-out both;
+        }
+
+        .banner .note {
+            margin-top: 0.35rem;
+            font-family: "Instrument Serif", Georgia, serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: clamp(1rem, 2.4vw, 1.3rem);
+            letter-spacing: 0.01em;
+            color: rgba(245, 247, 242, 0.88);
+            animation: rise 0.8s ease-out 0.1s both;
+        }
+
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .banner .status,
+            .banner .note {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <video class="bg-video" src="ben.mp4" autoplay muted loop playsinline></video>
+    <div class="banner">
+        <p class="status">UNDER CONSTRUCTION</p>
+        <p class="note">coming back soon</p>
+    </div>
+</body>
+
+</html>

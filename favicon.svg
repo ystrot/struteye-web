@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Strut Eye">
+  <path
+    d="M4 32c8-14 18-22 28-22s20 8 28 22c-8 14-18 22-28 22S12 46 4 32z"
+    fill="#0b1f14"
+    stroke="#e8f0e9"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+  <ellipse cx="32" cy="32" rx="18" ry="16" fill="#f4f7f4" />
+  <circle cx="32" cy="32" r="11" fill="#c8e800" />
+  <ellipse cx="27" cy="27" rx="3.2" ry="2.4" fill="#fff" opacity="0.55" />
+</svg>
